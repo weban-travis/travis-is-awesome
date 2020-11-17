@@ -1,0 +1,9 @@
+sudo: false
+before_install:
+  - 'gem install bundler:1.16.1'
+jobs:
+  include:
+    - stage: unit tests
+      script: echo one
+    - stage: unit tests
+      script: echo two
